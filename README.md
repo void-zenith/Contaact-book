@@ -1,3 +1,9 @@
+#To get backend 
+this is the repo for backend : https://github.com/void-zenith/Contact-book-backend
+1. git clone the repo
+2. then npm run json:server
+3. then start the react app using npm start
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
