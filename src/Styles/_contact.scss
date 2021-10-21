@@ -1,0 +1,162 @@
+.contact {
+  margin: 30px auto;
+  width: 360px;
+  height: 640px;
+  background-color: $grey;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 3px 7px #aaaaaa;
+  h2 {
+    text-align: center;
+  }
+  &-header {
+    display: flex;
+    padding: 5px 15px 15px 15px;
+    font-size: 20px;
+    border-bottom: 1px solid #000000;
+    align-items: center;
+    &__search {
+      position: relative;
+      display: flex;
+      align-items: center;
+      .input-fields__search {
+        width: 220px;
+      }
+      .btnSearch {
+        position: absolute;
+        right: 4px;
+      }
+    }
+    &__icons {
+      flex: 1;
+      text-align: right;
+    }
+  }
+  &-body {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: $white;
+  }
+  &-list {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 560px;
+
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    &__detail {
+      border-bottom: 1px solid black;
+      padding: 10px 5px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      .user-id {
+        text-align: center;
+        flex: 0.07;
+      }
+      .user-detail {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-left: 5px;
+        &__name {
+          font-size: 20px;
+          font-weight: bold;
+        }
+        &__personal {
+          font-size: 13px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          padding-top: 5px;
+
+          .user-email {
+            padding-left: 3px;
+          }
+          .user-age {
+            padding-right: 1.5px;
+            border-right: 2px solid rgb(0, 0, 0);
+          }
+        }
+      }
+      .user-icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex: 0.3;
+      }
+    }
+  }
+  &-profile {
+    &__button {
+      text-align: center;
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+}
+
+.blur {
+  filter: blur(3px);
+}
+
+.contact-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.contact-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+.contact-list::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 15px;
+}
+
+/* Handle on hover */
+.contact-list::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.user-card {
+  margin: 0 auto;
+  width: 99%;
+  height: 270px;
+  margin-bottom: 10px;
+  border-radius: 14px;
+  padding: 15px;
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  .card-avatar {
+    margin-bottom: 8px;
+  }
+  .card-details {
+    line-height: 1.5;
+    font-size: 20px;
+    color: #000;
+    &__color {
+      display: flex;
+      margin-top: 10px;
+      height: 65px;
+      background: rgba(11, 218, 50, 0.35);
+      backdrop-filter: blur(7px);
+      border-radius: 14px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

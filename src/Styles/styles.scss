@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+@import "./variables";
+@import "./contact";
+@import "./form";
+
+body {
+  background-color: $royalblue;
+}
+
+.input-fields {
+  height: 32px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  padding: 12px;
+}

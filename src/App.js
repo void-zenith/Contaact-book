@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Contact from "./Container/Contact";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import {
+  faUserEdit,
+  faUserMinus,
+  faPlusSquare,
+  faSearch,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
+library.add(faUserEdit, faUserMinus, faPlusSquare, faSearch, faUser);
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return <Contact></Contact>;
 }
 
 export default App;
